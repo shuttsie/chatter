@@ -1,0 +1,12 @@
+.messages {
+  padding: 5% 0;
+  overflow: auto;
+  flex: auto;
+}
+div[class*=react-scroll-to-bottom--css].messages {
+  max-height:536px;
+  height:100%;
+  border-top:1px solid #d3d3d3;
+  border-left:1px solid #d3d3d3;
+  border-right:1px solid #d3d3d3;
+}

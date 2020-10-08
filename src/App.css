@@ -1,0 +1,635 @@
+.next-steps .fa-link {
+  margin-right: 5px;
+}
+
+/* Fix for use only flexbox in content area */
+.next-steps .row {
+  margin-bottom: 0;
+}
+
+.next-steps .col-md-5 {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .next-steps .col-md-5 {
+    margin-bottom: 0;
+  }
+}
+
+.spinner {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.result-block-container .result-block {
+  opacity: 1;
+}
+
+input[type="text"], input[type="password"], textarea, select { 
+  outline: none;
+}
+/*Main Styles*/
+div#root {
+  height:auto !important;
+}
+html, body {
+  height:100%;
+  min-height:100%;
+  overflow: auto;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-image:url('https://fiservseminars-media.s3.amazonaws.com/bkgd.png'), linear-gradient(to bottom, #1f1f1f 0%, #202020 50%, #232323 100%);
+  background-repeat:no-repeat;
+  padding:0;
+  margin:0;
+  color:#000;
+  font-size:14px;
+}
+/*Fonts*/
+a {
+  text-decoration:none;
+}
+.btn-primary {
+  background: rgb(102,153,204);
+  border-color:rgb(102,153,204);
+  min-width:100px;
+}
+.btn-primary:hover, #qsLoginBtn:hover  {
+  background:rgb(230,230,230);
+  border-color:#000;
+  color:#000;
+}
+.btn-primary.disabled, .btn-primary:disabled {
+  background-color: #aaa;
+  border:none;
+}
+#qsLoginBtn {
+  background:#ff6600;
+  border-color:#ff6600;
+}
+h1 {
+  font-size:1.8em;
+  color:#ff6600;
+  font-weight:bold;
+}
+.hero h1 {
+  font-size:22px;
+  color:#ff6600;
+  font-weight:bold;
+}
+h2 {
+  color:#2e8bca;
+  font-size:22px;
+  font-weight: normal;
+}
+h2.section-header {
+  border-bottom: solid 1px #ccc;
+  margin-bottom:10px;
+}
+h2.agenda-subheader {
+  font-size:14px;
+  font-weight:bold;
+  padding: 0px 20px;
+}
+.seminar-container h2 {
+  margin-bottom:1em;
+}
+h3 {
+  font-weight: bold;
+  font-size:14px;
+}
+h3.meetingTitle {
+  color:#fff;
+  font-size:1.1em;
+}
+h6 {
+  margin-bottom:0 !important;
+}
+
+.toggle-buttons {
+  background:#ff6600;
+  color:#fff;
+}
+.logo {
+  background: url('https://s3.us-east-2.amazonaws.com/fiservseminars-media.com/logo.png');
+  background-size:contain;
+  background-position: center;
+  width: 167px;
+  height: 84px;
+  margin: 10px;
+  padding:0;
+}
+
+.page-title {
+  color: #ff6600;
+  font-size: 22px;
+  font-weight: normal;
+  margin-bottom: 0;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  width: fit-content;
+  padding: 10px 20px 10px 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  font-weight:bold;
+}
+.page-title i {
+  margin-right: 10px;
+}
+.page-title.meetings {
+  position: relative;
+}
+.nav-container {
+  width: 100%;
+  background: #fff;
+}
+
+.navbar {
+  flex-direction: column;
+  margin-top:0;
+  padding-top:0;
+  border-bottom: 1px solid #f60;
+  height: 203px;
+  box-shadow: none;
+}
+
+.announcement {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:#6699cc;
+  height:76px;
+  max-width: 100%;
+  border-radius:0;
+  border:none;
+}
+
+.announcement p {
+    margin: 0 auto;
+    max-width: 1200px;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.2rem;
+}
+
+.announcement a {
+    color: #333;
+    text-decoration: underline;
+}
+.navbar .container {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+.collapse.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+.container {
+  height: 100%;
+  max-width:100%;
+  padding:0;
+  margin-top:0 !important;
+}
+
+.content-wrapper {
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0 !important;
+  margin-bottom:0 !important;
+}
+
+.custom-sidenav {
+  width: 128px;
+  background: #666;
+  padding: 40px 0;
+  position: relative;
+  left: 0;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1006;
+  min-width: 64px;
+}
+
+.main-content-profile {
+    background: #fff;
+    height: 100%;
+    width:90%;
+    padding: 1% 2%;
+    margin: 3% 2% 0;
+}
+.custom-sidenav div[role*="menu"] {
+  background: #666;
+  height: auto;
+}
+
+#sidenav-item {
+  height: 75px!important;
+  display: flex!important;
+  justify-content: center;
+  margin-right: 0!important;
+  line-height: 0!important;
+  margin: 10px 0;
+}
+
+.sidebar-nav-link {
+  color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height:30px;
+}
+
+.sidebar-nav-link:hover {
+  opacity: .7;
+  color:#fff;
+  text-decoration: none;
+}
+.main-content {
+  width: 90%;
+  margin: 0 auto!important;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.meetingContent  {
+  background:rgba(0,0,0,.75);
+  border-left:10px solid #ff6600;
+  margin:2% 0 !important;
+  width: 100%;
+  min-width:293px;
+}
+.meetingContent {
+  margin-top:0;
+  width: 100%;
+}
+.meetingContent p {
+  color:#fff;
+  font-size:1em;
+  margin-bottom: 0rem;
+}
+.meetingContent h1 {
+  margin-top:0;
+  padding: 5px 20px;
+}
+
+.toggle-button {
+  background: rgb(102,153,204);
+  border-color:rgb(102,153,204);
+  min-width:100px;
+  border-radius:0;
+  width:33%;
+  color:#fff;
+  font-weight:400;
+  font-size:1rem;
+  text-align:center;
+  padding: .375rem .75rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  pointer-events:pointer;
+  cursor: pointer;
+}
+.left.meetings {
+  width:100%;
+}
+.meeting-content {
+  background: rgba(0,0,0,.75);
+    border-left: 10px solid #f60;
+    margin: 2% 0;
+}
+.meetings-container {
+  background: rgba(255,255,255,.6);
+  width: 90%;
+}
+.meetings-sections {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 1% 2%;
+    margin: 3% 2% 0;
+    display: inline-block;
+}
+.right {
+  background: transparent;
+  width: 30%;
+  height: 100%;
+}
+.right.meetings {
+  margin: 3% 2% 0;
+  padding: 1% 2%;
+  background:#fff;
+}
+/*Footer*/
+.footer {
+  background: #333;
+  padding: 1% 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  text-align:center;
+  font-size: 13px;
+}
+
+.footer p {
+  margin-bottom:2px;
+}
+.footer-logo {
+  background: url(https://www.fiserv.com/content/dam/fiserv-com/fiserv-logo-white.svg);
+  width: 88px;
+  height: 45px;
+  background-position:center;
+  margin: 0 auto 10px auto;
+}
+
+ */.ui.accordion,.ui.accordion .accordion{max-width:100%}.ui.accordion .accordion{margin:1em 0 0;padding:0}.ui.accordion .accordion .title,.ui.accordion .title{cursor:pointer}.ui.accordion .title:not(.ui){padding:.5em 0;font-family:Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;font-size:1em;color:rgba(0,0,0,.87)}.ui.accordion .accordion .title~.content,.ui.accordion .title~.content{display:none}.ui.accordion:not(.styled) .accordion .title~.content:not(.ui),.ui.accordion:not(.styled) .title~.content:not(.ui){margin:'';padding:.5em 0 1em}.ui.accordion:not(.styled) .title~.content:not(.ui):last-child{padding-bottom:0}.ui.accordion .accordion .title .dropdown.icon,.ui.accordion .title .dropdown.icon{display:inline-block;float:none;opacity:1;width:1.25em;height:1em;margin:0 .25rem 0 0;padding:0;font-size:1em;-webkit-transition:opacity .1s ease,-webkit-transform .1s ease;transition:opacity .1s ease,-webkit-transform .1s ease;transition:transform .1s ease,opacity .1s ease;transition:transform .1s ease,opacity .1s ease,-webkit-transform .1s ease;vertical-align:baseline;-webkit-transform:none;transform:none}.ui.accordion.menu .item .title{display:block;padding:0}.ui.accordion.menu .item .title>.dropdown.icon{float:right;margin:.21425em 0 0 1em;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.ui.accordion .ui.header .dropdown.icon{font-size:1em;margin:0 .25rem 0 0}.ui.accordion .accordion .active.title .dropdown.icon,.ui.accordion .active.title .dropdown.icon{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.ui.accordion.menu .item .active.title>.dropdown.icon{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.ui.styled.accordion{width:600px}.ui.styled.accordion,.ui.styled.accordion .accordion{border-radius:.28571429rem;background:#fff;-webkit-box-shadow:0 1px 2px 0 rgba(34,36,38,.15),0 0 0 1px rgba(34,36,38,.15);box-shadow:0 1px 2px 0 rgba(34,36,38,.15),0 0 0 1px rgba(34,36,38,.15)}.ui.styled.accordion .accordion .title,.ui.styled.accordion .title{margin:0;padding:.75em 1em;color:rgba(0,0,0,.4);font-weight:700;border-top:1px solid rgba(34,36,38,.15);-webkit-transition:background .1s ease,color .1s ease;transition:background .1s ease,color .1s ease}.ui.styled.accordion .accordion .title:first-child,.ui.styled.accordion>.title:first-child{border-top:none}.ui.styled.accordion .accordion .content,.ui.styled.accordion .content{margin:0;padding:.5em 1em 1.5em}.ui.styled.accordion .accordion .content{padding:0;padding:.5em 1em 1.5em}.ui.styled.accordion .accordion .active.title,.ui.styled.accordion .accordion .title:hover,.ui.styled.accordion .active.title,.ui.styled.accordion .title:hover{background:0 0;color:rgba(0,0,0,.87)}.ui.styled.accordion .accordion .active.title,.ui.styled.accordion .accordion .title:hover{background:0 0;color:rgba(0,0,0,.87)}.ui.styled.accordion .active.title{background:0 0;color:rgba(0,0,0,.95)}.ui.styled.accordion .accordion .active.title{background:0 0;color:rgba(0,0,0,.95)}.ui.accordion .accordion .active.content,.ui.accordion .active.content{display:block}.ui.fluid.accordion,.ui.fluid.accordion .accordion{width:100%}.ui.inverted.accordion .title:not(.ui){color:rgba(255,255,255,.9)}@font-face{font-family:Accordion;src:url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMggjB5AAAAC8AAAAYGNtYXAPfOIKAAABHAAAAExnYXNwAAAAEAAAAWgAAAAIZ2x5Zryj6HgAAAFwAAAAyGhlYWT/0IhHAAACOAAAADZoaGVhApkB5wAAAnAAAAAkaG10eAJuABIAAAKUAAAAGGxvY2EAjABWAAACrAAAAA5tYXhwAAgAFgAAArwAAAAgbmFtZfC1n04AAALcAAABPHBvc3QAAwAAAAAEGAAAACAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAABAAAAAAAAAAAAAgAANzkBAAAAAAEAAAAAAAAAAAACAAA3OQEAAAAAAQASAEkAtwFuABMAADc0PwE2FzYXFh0BFAcGJwYvASY1EgaABQgHBQYGBQcIBYAG2wcGfwcBAQcECf8IBAcBAQd/BgYAAAAAAQAAAEkApQFuABMAADcRNDc2MzIfARYVFA8BBiMiJyY1AAUGBwgFgAYGgAUIBwYFWwEACAUGBoAFCAcFgAYGBQcAAAABAAAAAQAAqWYls18PPPUACwIAAAAAAM/9o+4AAAAAz/2j7gAAAAAAtwFuAAAACAACAAAAAAAAAAEAAAHg/+AAAAIAAAAAAAC3AAEAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAQAAAAC3ABIAtwAAAAAAAAAKABQAHgBCAGQAAAABAAAABgAUAAEAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('truetype'),url(data:application/font-woff;charset=utf-8;base64,d09GRk9UVE8AAASwAAoAAAAABGgAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABDRkYgAAAA9AAAAS0AAAEtFpovuE9TLzIAAAIkAAAAYAAAAGAIIweQY21hcAAAAoQAAABMAAAATA984gpnYXNwAAAC0AAAAAgAAAAIAAAAEGhlYWQAAALYAAAANgAAADb/0IhHaGhlYQAAAxAAAAAkAAAAJAKZAedobXR4AAADNAAAABgAAAAYAm4AEm1heHAAAANMAAAABgAAAAYABlAAbmFtZQAAA1QAAAE8AAABPPC1n05wb3N0AAAEkAAAACAAAAAgAAMAAAEABAQAAQEBB3JhdGluZwABAgABADr4HAL4GwP4GAQeCgAZU/+Lix4KABlT/4uLDAeLa/iU+HQFHQAAAHkPHQAAAH4RHQAAAAkdAAABJBIABwEBBw0PERQZHnJhdGluZ3JhdGluZ3UwdTF1MjB1RjBEOXVGMERBAAACAYkABAAGAQEEBwoNVp38lA78lA78lA77lA773Z33bxWLkI2Qj44I9xT3FAWOj5CNkIuQi4+JjoePiI2Gi4YIi/uUBYuGiYeHiIiHh4mGi4aLho2Ijwj7FPcUBYeOiY+LkAgO+92L5hWL95QFi5CNkI6Oj4+PjZCLkIuQiY6HCPcU+xQFj4iNhouGi4aJh4eICPsU+xQFiIeGiYaLhouHjYePiI6Jj4uQCA74lBT4lBWLDAoAAAAAAwIAAZAABQAAAUwBZgAAAEcBTAFmAAAA9QAZAIQAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAAAAAAAABAAADw2gHg/+D/4AHgACAAAAABAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEADgAAAAKAAgAAgACAAEAIPDa//3//wAAAAAAIPDZ//3//wAB/+MPKwADAAEAAAAAAAAAAAAAAAEAAf//AA8AAQAAAAEAADfYOJZfDzz1AAsCAAAAAADP/aPuAAAAAM/9o+4AAAAAALcBbgAAAAgAAgAAAAAAAAABAAAB4P/gAAACAAAAAAAAtwABAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAAAEAAAAAtwASALcAAAAAUAAABgAAAAAADgCuAAEAAAAAAAEADAAAAAEAAAAAAAIADgBAAAEAAAAAAAMADAAiAAEAAAAAAAQADABOAAEAAAAAAAUAFgAMAAEAAAAAAAYABgAuAAEAAAAAAAoANABaAAMAAQQJAAEADAAAAAMAAQQJAAIADgBAAAMAAQQJAAMADAAiAAMAAQQJAAQADABOAAMAAQQJAAUAFgAMAAMAAQQJAAYADAA0AAMAAQQJAAoANABaAHIAYQB0AGkAbgBnAFYAZQByAHMAaQBvAG4AIAAxAC4AMAByAGEAdABpAG4AZ3JhdGluZwByAGEAdABpAG4AZwBSAGUAZwB1AGwAYQByAHIAYQB0AGkAbgBnAEYAbwBuAHQAIABnAGUAbgBlAHIAYQB0AGUAZAAgAGIAeQAgAEkAYwBvAE0AbwBvAG4ALgADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format('woff');font-weight:400;font-style:normal}.ui.accordion .accordion .title .dropdown.icon,.ui.accordion .title .dropdown.icon{font-family:Accordion;line-height:1;-webkit-backface-visibility:hidden;backface-visibility:hidden;font-weight:400;font-style:normal;text-align:center}.ui.accordion .accordion .title .dropdown.icon:before,.ui.accordion .title .dropdown.icon:before{content:'\f0da'}
+
+ /*Accordion override*/
+ .ui.styled.accordion, .ui.styled.accordion .accordion {
+  background:none;
+  padding: 5px 20px;
+  margin: 2% 0;
+  border-radius:0;
+  box-shadow: none;
+  min-width: 293px;
+ }
+ .ui.styled.accordion .title, .ui.styled.accordion .active.title{
+   color:#fff;
+   min-width: 293px;
+ }
+ .ui.styled.accordion .title:hover, .ui.styled.accordion .active.title:hover {
+   color:#ff6600;
+ }
+ .ui.styled.accordion .accordion .title, .ui.styled.accordion .title {
+   min-width:293px;
+   width:100%;
+ }
+ .ui.styled.accordion .accordion .content, .ui.styled.accordion .content {
+  padding: .5em 1em .5em;
+  border-bottom: 2px solid #f60;
+ }
+
+ .footer p {
+   color:#fff;
+ }
+
+ /*Notes*/
+ .note-form {
+   position: relative;
+   background-color: #fff;
+   transition: box-shadow .25s;
+   padding: 1% 2%;
+ }
+
+ .note-form input {
+  padding: 20px;
+  margin-right:10px;
+  border-radius: 0 0 2px 2px;
+  border: 2px solid #d3d3d3;
+  width:100%;
+ }
+ 
+ .notes-container .note {
+   background:#ff6600;
+   color:#fff;
+   padding:1% 2%;
+   margin-top:5px;
+ }
+ 
+ button.add-note {
+   background:#ff6600;
+ }
+
+ button.add-note:hover {
+  background: rgb(102,153,204);
+  border-color:rgb(102,153,204);
+  color:#fff;
+ }
+
+ /*Chat*/
+ .chat {
+   margin-top:10px;
+ }
+ .chat-row {
+  justify-content: flex-start;
+}
+ .nav-item.dropdown .dropdown-menu {
+   right:0;
+   left:unset;
+ }
+
+ .placeholderImage {
+   background:url("https://fiservseminars-media.s3.amazonaws.com/coming-soon.jpg");
+   height:100%;
+   width:100%;
+ }
+ video#video-player {
+   width:100%;
+ }
+ .video-js.video-player.video-js.vjs-4-3 {
+   padding-top:60%;
+ }
+
+.player-wrapper {
+  width:60%;
+  padding:0 10px;
+}
+.chat-wrapper {
+  width:40%;
+  padding:0 10px;
+}
+.chat-container {
+  border-radius: 0 0 2px 2px;
+  border: 2px solid #d3d3d3;
+  padding:10px;
+}
+.composer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+ /*UI Overrides*/
+ .ui.padded.two.column.grid {
+   background:rgba(255,255,255,.6);
+   width: 90%;
+ }
+.ui.padded.two.column.grid .row {
+  margin-left:0;
+  margin-right:0;
+  justify-content: space-around;
+  padding-top:10px;
+}
+.ui.padded.four.column.grid {
+  background: rgba(255,255,255,.6);
+  width: 90%;
+}
+.ui.padded.four.column.grid .row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.ui.padded.two.column.grid .row .column {
+  padding:10px;
+}
+.dropdown---dropdown-menu---1fkH0 > .dropdown---menu-item-wrapper---3uAM0 > .dropdown---menu-item---1LjoL {
+  color:#fff !important;
+  font-size:14px;
+  font-family:Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown---dropdown-menu---1fkH0 > .dropdown---menu-item-wrapper---3uAM0 > .dropdown---menu-item---1LjoL:hover {
+  color:#fff;
+  opacity:0.7;
+  background:none;
+}
+.buttons---dropdown-toggle---vMtjL.buttons---btn---2jZHN {
+  padding-right:11px;
+}
+
+.ui.card {
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items:center;
+  border:none;
+  height:fit-content;
+}
+.ui.card .content {
+  width:100%;
+}
+.article-block {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width:90%;
+}
+.article-block .ui.card {
+  width: 25%;
+  padding: 10px;
+  margin: 10px;
+}
+.card-header {
+  color:#2e8bca;
+  font-size:22px;
+  font-weight: normal;
+}
+.card-description {
+  padding:5px;
+}
+.next-steps h2 {
+  margin-bottom:0;
+}
+.video-description {
+  width: 100%;
+  max-width: 450px;
+  padding:10px;
+}
+.video-description .header {
+  padding:5px 10px;
+}
+.video-cards {
+  border-radius:0;
+}
+.resource-flyout {
+  display:inline;
+}
+.resource-flyout-toggle {
+  background:none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 30px;
+  border:none;
+  font-size:14px;
+  font-family:Helvetica, Arial, sans-serif;
+  transition: ease-in-out;
+}
+.resource-flyout-toggle:hover {
+  background:none;
+  opacity: .7;
+  color:#fff;
+  text-decoration: none;
+
+}
+.resource-flyout button{
+  background:none !important;
+  box-shadow: none !important;
+  border:none;
+  color:#fff !important;
+}
+.fa-cogs {
+  color:#fff !important;
+}
+span.dropdown---caret---3CkEt {
+  display: none;
+}
+.resource-flyout-menu {
+  color:#fff;
+  background:#666666;
+  height:auto;
+  top:auto;
+  padding:5px;
+  border:none;
+  margin-top:-10px;
+}
+.meeting-video {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: center;
+}
+.greetings img {
+  width:100%;
+}
+
+.article-block .ui.card.survey-card {
+  width:60%;
+}
+.ui.card.survey-card .header.card-header {
+  text-align:center;
+}
+.survey-descriptions {
+  display: flex;
+  flex-direction: row;
+  padding:5px;
+}
+.survey-descriptions .description {
+  width:50%;
+}
+
+.vjs-big-play-button {
+  display: none !important;
+}
+/* .live-video-session .video-js {
+  width:100%;
+  max-width:860px;
+  height:420px;
+} */

@@ -1,0 +1,13 @@
+{
+    "streams": [
+      {
+        "id": 1,
+        "stream": {
+          "channelArn": "arn:aws:ivs:us-east-1:076005434014:channel/bQ1l9LwPytZA",
+          "health": "HEALTHY",
+          "playbackUrl": "https://ca351d1575ab.us-east-1.playback.live-video.net/api/video/v1/us-east-1.076005434014.channel.bQ1l9LwPytZA.m3u8",
+          "startTime": "8:00:00 a.m. CST"
+        }
+      }
+    ]
+  }
